@@ -10,6 +10,7 @@ import java.util.List;
 //bech nassnaa hajet l service
 @AllArgsConstructor
 @RestController
+
 public class SkieurRestController {
 
     private ISkieur iSkieur;
@@ -47,4 +48,10 @@ public class SkieurRestController {
     public void deleteSk(@PathVariable Long numSk){
        iSkieur.deleteSkieur(numSk);
     }
+@GetMapping("/getskBynom/{nom}")
+    public SKieur getskBynom(@PathVariable String nom)
+    {
+        return iSkieur.getskBynom(nom);
+    }
 }
+

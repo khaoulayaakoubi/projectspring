@@ -17,4 +17,7 @@ public interface ISkieur {
 
 
     public void deleteSkieur (Long numSk);
+    public SKieur getskBynom (String nom);
+
+
 }

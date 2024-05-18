@@ -5,6 +5,7 @@ import tn.esprit.springproject.entities.SKieur;
 
 public interface SkieurRepository extends JpaRepository<SKieur,Long> {
 
+    public SKieur findByNomS(String nomS);
 
 
 

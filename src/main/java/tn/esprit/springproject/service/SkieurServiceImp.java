@@ -36,4 +36,9 @@ public class SkieurServiceImp implements ISkieur {
         skr.deleteById(numSk);
 
     }
+
+    @Override
+    public SKieur getskBynom(String nom) {
+        return skr.findByNomS(nom);
+    }
 }

@@ -47,4 +47,13 @@ public class InscriptionRestController {
     public void deleteInscri(@PathVariable Long numInscri){
         iInscription.deleteInscription(numInscri);
     }
+
+    @PostMapping("/addInscriptionAndAssignToSkieur/{numSk}")
+    public Inscription addInscriptionAndAssignToSkieur (@RequestBody Inscription inscription, @PathVariable Long numSk){
+        return iInscription.addInscriptionAssingToskieur(inscription, numSk);
+    }
+    @PostMapping("/addInscriptionAndAssignToCours/{numCours}")
+    public Inscription addInscriptionAndAssignToCours(@RequestBody Inscription inscription, @PathVariable Long numCours){
+        return iInscription.addInscriptionAndAssignToCours(inscription, numCours);
+    }
 }

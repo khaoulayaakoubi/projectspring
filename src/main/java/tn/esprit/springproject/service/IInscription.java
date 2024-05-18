@@ -16,4 +16,10 @@ public interface IInscription {
 
 
     public void deleteInscription (Long numInscription);
+    public Inscription addInscriptionAssingToskieur(Inscription in , Long numSK);
+    public Inscription addInscriptionAndAssignToCours(Inscription inscription, Long numCours);
+
+
+
+
 }
